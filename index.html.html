@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz Cumpleaños, Yuli</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Lora:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
+    background: linear-gradient(
+        135deg,
+        #c45c7a,
+        #a03358,
+        #c96080
+    );
+    font-family:'Lora', serif;
+    position:relative;
+}
+
+body::before {
+    content:'';
+    position:fixed;
+    inset:0;
+    background:
+        radial-gradient(ellipse at 20% 30%, rgba(255, 160, 180, 0.2) 0%, transparent 55%),
+        radial-gradient(ellipse at 80% 70%, rgba(220, 100, 140, 0.18) 0%, transparent 55%);
+    pointer-events:none;
+    z-index:0;
+}
+
+.container{
+    max-width:700px;
+    padding:50px 45px;
+    position:relative;
+    z-index:2;
+}
+
+.deco-line {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    margin-bottom:32px;
+    color:rgba(255, 220, 235, 0.7);
+    font-size:1.1rem;
+    letter-spacing:6px;
+}
+
+.deco-line::before,
+.deco-line::after {
+    content:'';
+    width:70px;
+    height:1px;
+    background: linear-gradient(90deg, transparent, rgba(255,220,235,0.6), transparent);
+}
+
+h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:5.2rem;
+    font-weight:600;
+    font-style:italic;
+    color:#fff0f5;
+    margin-bottom:30px;
+    line-height:1.15;
+    letter-spacing:1px;
+    text-shadow: 0 0 35px rgba(255, 180, 200, 0.4);
+}
+
+.message{
+    font-size:2rem;
+    line-height:1.9;
+    color:#ffe8ef;
+    font-style:italic;
+    font-family:'Lora', serif;
+    font-weight:400;
+    max-width:580px;
+    margin:0 auto;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.2);
+}
+
+.heart{
+    margin-top:28px;
+    font-size:3rem;
+    color:#fff0f5;
+    animation:pulse 2s infinite;
+    display:block;
+    filter: drop-shadow(0 0 12px rgba(255,200,220,0.6));
+}
+
+.music-btn{
+    margin-top:38px;
+    display:inline-block;
+    text-decoration:none;
+    background: rgba(255,255,255,0.18);
+    color: #fff0f5;
+    padding:15px 34px;
+    border-radius:40px;
+    font-size:1.25rem;
+    font-family:'Lora', serif;
+    font-style:italic;
+    letter-spacing:1.5px;
+    transition:0.35s ease;
+    border:1px solid rgba(255,220,235,0.45);
+    box-shadow:
+        0 4px 25px rgba(0,0,0,0.15),
+        inset 0 1px 0 rgba(255,255,255,0.15);
+    backdrop-filter: blur(4px);
+}
+
+.music-btn:hover{
+    transform:scale(1.06) translateY(-2px);
+    background: rgba(255,255,255,0.26);
+    box-shadow:
+        0 8px 35px rgba(0,0,0,0.2),
+        inset 0 1px 0 rgba(255,255,255,0.2);
+}
+
+.sparkle{
+    position:fixed;
+    color: rgba(255, 220, 235, 0.75);
+    font-size:20px;
+    animation:float linear infinite;
+    pointer-events:none;
+    z-index:1;
+}
+
+@keyframes pulse{
+    0%,100%{ transform:scale(1); }
+    50%{ transform:scale(1.15); }
+}
+
+@keyframes float{
+    from{
+        transform:translateY(105vh);
+        opacity:0;
+    }
+    20%{ opacity:1; }
+    to{
+        transform:translateY(-100px);
+        opacity:0;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="sparkle" style="left:6%;  animation-duration:9s;  animation-delay:0s;">✦</div>
+<div class="sparkle" style="left:18%; animation-duration:12s; animation-delay:1.5s;">✧</div>
+<div class="sparkle" style="left:32%; animation-duration:10s; animation-delay:3s;">♦</div>
+<div class="sparkle" style="left:48%; animation-duration:14s; animation-delay:0.8s;">✦</div>
+<div class="sparkle" style="left:63%; animation-duration:11s; animation-delay:2.5s;">✧</div>
+<div class="sparkle" style="left:77%; animation-duration:8s;  animation-delay:4s;">♦</div>
+<div class="sparkle" style="left:90%; animation-duration:13s; animation-delay:1s;">✦</div>
+<div class="sparkle" style="left:55%; animation-duration:10s; animation-delay:5.5s; font-size:13px;">♥</div>
+<div class="sparkle" style="left:38%; animation-duration:15s; animation-delay:6s;  font-size:13px;">♥</div>
+
+<div class="container">
+
+    <div class="deco-line">✦</div>
+
+    <h1>Feliz Cumpleaños, Yuli✨</h1>
+
+    <p class="message">
+        Que la vida te sonría siempre y te regale todo aquello
+        que mantiene feliz a tu corazón
+    </p>
+
+    <span class="heart">♥</span>
+
+    <a class="music-btn"
+       href="https://www.youtube.com/watch?v=-g-3ptRfFP4&list=RD-g-3ptRfFP4&start_radio=1"
+       target="_blank">
+       Nuestro Sueño ♫
+    </a>
+
+
+</div>
+
+
+
+</body>
+</html>
